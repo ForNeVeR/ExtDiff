@@ -4,10 +4,12 @@ ExtDiff [![Status Aquana][status-aquana]][andivionian-status-classifier]
 This is a small command line script that will compare two files using Microsoft
 Word file comparison tool. Microsoft Word will be started using COM automation.
 
+It is useful as a diff tool for Word-related file types.
+
 To run the script, execute it through PowerShell like this:
 
 ```console
-$ powershell Diff-Word.ps1 oldfile.docx newfile.docx
+$ powershell -File Diff-Word.ps1 oldfile.docx newfile.docx
 ```
 
 Idea taken from [TortoiseSVN diff-doc script][tortoisesvn-diff-doc].
