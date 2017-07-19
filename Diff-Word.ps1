@@ -3,6 +3,9 @@ param(
     $ChangedFileName
 )
 
+$BaseFileName = Resolve-Path $BaseFileName | Select-Object -first 1 | Select -ExpandProperty "Path"
+$ChangedFileName = Resolve-Path $ChangedFileName | Select-Object -first 1 | Select -ExpandProperty "Path"
+
 $ErrorActionPreference = 'Stop'
 
 # Remove the readonly attribute because Word is unable to compare readonly
@@ -20,7 +23,7 @@ try {
 	$word = New-Object -ComObject Word.Application
 	$word.Visible = $true
 	$document = $word.Documents.Open($BaseFileName, $false, $false)
-	$document.Compare($ChangedFileName, [ref]"Comparison", [ref]$wdCompareTargetNew, [ref]$true, [ref]$true)
+	$document.Compare("$ChangedFileName", [ref]"Comparison", [ref]$wdCompareTargetNew, [ref]$true, [ref]$true)
 
 	$word.ActiveDocument.Saved = 1
 
