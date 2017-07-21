@@ -1,7 +1,7 @@
 The MIT License (MIT)
 =====================
 
-Copyright (C) 2013–2016 by F. von Never
+Copyright (C) 2013–2017 by F. von Never
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
