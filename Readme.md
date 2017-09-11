@@ -12,6 +12,12 @@ To run the script, execute it through PowerShell like this:
 $ powershell -File Diff-Word.ps1 oldfile.docx newfile.docx
 ```
 
+Or via the batch file:
+
+```console
+$ diff-word.bat oldfile.docx newfile.docx
+```
+
 Idea taken from [TortoiseSVN diff-doc script][tortoisesvn-diff-doc].
 
 [andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-aquana-
