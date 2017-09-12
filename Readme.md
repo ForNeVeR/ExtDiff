@@ -15,7 +15,7 @@ $ powershell -File Diff-Word.ps1 oldfile.docx newfile.docx
 Or via the batch file:
 
 ```console
-$ diff-word.bat oldfile.docx newfile.docx
+$ diff-word.cmd oldfile.docx newfile.docx
 ```
 
 Idea taken from [TortoiseSVN diff-doc script][tortoisesvn-diff-doc].
