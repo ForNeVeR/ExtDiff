@@ -6,6 +6,8 @@ Word file comparison tool. Microsoft Word will be started using COM automation.
 
 It is useful as a diff tool for Word-related file types.
 
+## Using via command line
+
 To run the script, execute it through PowerShell like this:
 
 ```console
@@ -17,6 +19,29 @@ Or via the batch file:
 ```console
 $ diff-word.cmd oldfile.docx newfile.docx
 ```
+
+## Using via Git Integration
+
+You can also use this tool with git, so that `git diff` will use Microsoft Word to diff docx files.
+
+To do this, you must configure your .gitattributes and .gitconfig to support a custom diff tool.
+
+To configure your .gitattributes, open or create a file 
+called .gitattributes in your git repo's root directory.
+Add the following text to a new line in this file:
+`*.docx diff=word`
+
+To configure your .gitconfig, open or create the file in
+your home directory. Add the following to .gitconfig
+```ini
+[diff "word"]
+	command = <pathToExtDiffFolder>/diff-word-wrapper.cmd
+```
+
+Replace `<pathToExtDiffFolder>` with the path to this repo's
+location on disk.
+
+-------
 
 Idea taken from [TortoiseSVN diff-doc script][tortoisesvn-diff-doc].
 
