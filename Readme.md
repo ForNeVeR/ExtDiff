@@ -28,6 +28,8 @@ to diff `*.docx` files.
 To do this, you must configure your `.gitattributes` and `.gitconfig` to support
 a custom diff tool.
 
+### `.gitattributes`
+
 To configure your `.gitattributes`, open or create a file called
 `.gitattributes` in your git repo's root directory. Add the following text to a
 new line in this file:
@@ -35,6 +37,16 @@ new line in this file:
 ```
 *.docx diff=word
 ```
+
+It is also possible to create a global `.gitattributes` file that will be
+applied to every repository in a system. To do that, create a file
+`.gitattributes` in your home directory, and then perform the following command:
+
+```console
+git config --global core.attributesfile ~/.gitattributes
+```
+
+### `.gitconfig`
 
 To configure your `.gitconfig`, open or create the file in your home directory.
 Then, add the following to your `.gitconfig`:
