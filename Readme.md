@@ -20,6 +20,10 @@ Or via the batch file:
 $ diff-word.cmd oldfile.docx newfile.docx
 ```
 
+## Using GUI form
+
+To run the GUI form run file `start-gui.cmd`: it will open form that stays on top off all windows and you can drag files from Windows Explorer to two text fields (first for old document and second for revised document). When you click "Compare" button it will start Word application with chosen documents as in command line usage and this form will loose "stay on top of all windows" property. It will regain this property after button "Clear" is clicked.
+
 ## Using via Git Integration
 
 You can also use this tool with git, so that `git diff` will use Microsoft Word
