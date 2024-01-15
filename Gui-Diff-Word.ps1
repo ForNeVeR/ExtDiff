@@ -3,9 +3,10 @@ Add-Type -AssemblyName System.Windows.Forms
 
 $Form = New-Object System.Windows.Forms.Form
 $Form.ClientSize = New-Object System.Drawing.Point(600, 162)
-$Form.text = "Compare MS Word Documents"
+$Form.text = 'Compare MS Word Documents (drop files here)'
 #Make a form topmost window - good for drag and drop operations
 $Form.TopMost = $true
+$Form.FormBorderStyle = [System.Windows.Forms.BorderStyle]::FixedSingle
 
 $olddoc = New-Object System.Windows.Forms.TextBox
 $olddoc.multiline = $true
