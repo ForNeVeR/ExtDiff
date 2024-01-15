@@ -20,9 +20,16 @@ Or via the batch file:
 $ diff-word.cmd oldfile.docx newfile.docx
 ```
 
-## Using GUI form
+## Using the GUI form
 
-To run the GUI form run file `start-gui.cmd`: it will open form that stays on top off all windows and you can drag files from Windows Explorer to two text fields (first for old document and second for revised document). When you click "Compare" button it will start Word application with chosen documents as in command line usage and this form will loose "stay on top of all windows" property. It will regain this property after button "Clear" is clicked.
+![UI Form Screenshot][docs.ui-form]
+
+To run the GUI form, run the script `start-gui.cmd`: it will open a form that stays on top of all the system windows,
+and you can drag files from Windows Explorer to two text fields
+(first for the old document, and second for the revised document).
+When you click the **Compare** button, it will start Word application with chosen documents as in command line usage,
+and the form will lose the "stay on top of all windows" behavior.
+It will regain this property again after the button **Clear** is clicked.
 
 ## Using via Git Integration
 
@@ -71,3 +78,4 @@ Idea taken from [TortoiseSVN diff-doc script][tortoisesvn-diff-doc].
 [tortoisesvn-diff-doc]: https://sourceforge.net/p/tortoisesvn/code/27268/tree/trunk/contrib/diff-scripts/diff-doc.js
 
 [status-aquana]: https://img.shields.io/badge/status-aquana-yellowgreen.svg
+[docs.ui-form]: docs/ui-screenshot.png
