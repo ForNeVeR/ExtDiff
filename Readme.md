@@ -74,8 +74,14 @@ location on disk.
 
 Idea taken from [TortoiseSVN diff-doc script][tortoisesvn-diff-doc].
 
-[andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-aquana-
-[tortoisesvn-diff-doc]: https://sourceforge.net/p/tortoisesvn/code/27268/tree/trunk/contrib/diff-scripts/diff-doc.js
+Additional Documentation
+------------------------
+- [License (MIT)][docs.license]
+- [Changelog][docs.changelog]
 
-[status-aquana]: https://img.shields.io/badge/status-aquana-yellowgreen.svg
+[andivionian-status-classifier]: https://github.com/ForNeVeR/andivionian-status-classifier#status-aquana-
+[docs.changelog]: CHANGELOG.md
+[docs.license]: License.md
 [docs.ui-form]: docs/ui-screenshot.png
+[status-aquana]: https://img.shields.io/badge/status-aquana-yellowgreen.svg
+[tortoisesvn-diff-doc]: https://sourceforge.net/p/tortoisesvn/code/27268/tree/trunk/contrib/diff-scripts/diff-doc.js
