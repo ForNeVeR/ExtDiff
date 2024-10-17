@@ -30,6 +30,7 @@ and you can drag files from Windows Explorer to two text fields
 When you click the **Compare** button, it will start Word application with chosen documents as in command line usage,
 and the form will lose the "stay on top of all windows" behavior.
 It will regain this property again after the button **Clear** is clicked.
+Multidrop will drop the first element in the box where files are dropped and the second one into the other box.
 
 ## Using via Git Integration
 
