@@ -1,2 +1,2 @@
 @echo off
-powershell.exe -File "Gui-Diff-Word.ps1"
+cmd /c start /min "" powershell -WindowStyle Hidden -ExecutionPolicy Bypass -File "Gui-Diff-Word.ps1"
